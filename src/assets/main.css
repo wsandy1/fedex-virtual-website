@@ -4,3 +4,43 @@ body {
   background-color: var(--brand-white);
   font-family: "FuturaBold";
 }
+
+.arrow-button {
+  background-color: var(--brand-orange);
+  font-family: "FuturaBold";
+  color: var(--brand-white);
+  text-decoration: none;
+  padding: 5px 8px;
+  position: relative;
+  transition: bottom 0.3s;
+  bottom: 0;
+}
+
+
+.arrow-button::after {
+  position: absolute;
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-top: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 8px solid var(--brand-orange);
+  right: -23px;
+  bottom: 1px;
+}
+
+.arrow-button:hover {
+  bottom: 5px;
+}
+
+main {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+h1 {
+  color: var(--brand-purple);
+  font-size: 60px;
+}
+

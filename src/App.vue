@@ -9,12 +9,14 @@ import { RouterLink, RouterView } from 'vue-router'
       <nav>
         <RouterLink class="nav-link" to="/">Home</RouterLink>
         <RouterLink class="nav-link" to="/fleet">Fleet</RouterLink>
-        <RouterLink class="nav-link" to="/team">Team</RouterLink>
         <a class="nav-link" href="https://vamsys.io/register/fdxvirtual">Join</a>
       </nav>
     </div>
   </header>
   <RouterView />
+  <footer>
+    <p>&copy; &lt;Name&gt; 2022. Site made with <span class="heart">&lt;3</span> by <a href="https://github.com/wsandy1">Will S</a>.</p>
+  </footer>
 </template>
 
 <style scoped>
@@ -26,6 +28,7 @@ header {
 }
 
 .header-content {
+  position: relative;
   max-width: 60%;
   margin: 0 auto;
   padding: 20px 0;
@@ -48,6 +51,26 @@ header {
 
 .router-link-active {
   color: var(--brand-orange);
+}
+
+footer {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--brand-purple);
+  color: var(--brand-white);
+  font-family: "Roboto";
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--brand-white);
+  font-weight: bold;
+}
+
+.heart {
+  color: red;
 }
 
 </style>
