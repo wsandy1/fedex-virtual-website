@@ -1,0 +1,12 @@
+@import "@fontsource/roboto";
+
+@font-face {
+  font-family: "FuturaBold";
+  src: url(./fonts/FuturaBold.otf);
+}
+
+:root {
+  --brand-purple: #4d148c;
+  --brand-orange: #ff5900;
+  --brand-white: #f3f3f3;
+}
