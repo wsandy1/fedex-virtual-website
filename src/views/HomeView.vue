@@ -79,11 +79,18 @@ onMounted(() => {
     margin-top: 105px;
   }
 
+  @media screen and (max-width: 750px) {
+  .stats-row {
+    flex-direction: column;
+    margin-top: 75px;
+  }
+}
+
   .container {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 24px;
-  top: 89vh;
+  bottom: 8vh;
   display: flex;
   justify-content: center;
   transition: display 3s;
@@ -182,6 +189,21 @@ onMounted(() => {
   width: 50%;
 }
 
+
+@media screen and (max-width: 1000px) {
+  .content-halves {
+    flex-direction: column-reverse;
+  }
+
+  .content-halves .about {
+    width: auto;
+  }
+
+  .content-halves img {
+    width: 100%;
+  }
+}
+
 .promo {
   width: 100%;
   display: flex;
@@ -201,6 +223,13 @@ onMounted(() => {
 
 .promo-box img {
   width: 300px;
+}
+
+
+@media screen and (max-width: 750px) {
+    .promo-box img {
+        max-width: 100%;
+    }
 }
 
 .promo-box:first-child {

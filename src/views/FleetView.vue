@@ -96,6 +96,23 @@ import HeroImage from '../components/HeroImage.vue';
     margin-left: 50px;
 }
 
+@media screen and (max-width: 800px) {
+    .aircraft {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .aircraft img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .aircraft-details {
+        width: 100%!important;
+        margin-left: 0!important;
+    }
+}
+
 .aircraft-details h1 {
     margin: 0;
 }

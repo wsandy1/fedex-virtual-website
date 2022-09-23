@@ -15,7 +15,7 @@ import { RouterLink, RouterView } from 'vue-router'
   </header>
   <RouterView />
   <footer>
-    <p>&copy; &lt;Name&gt; 2022. Site made with <span class="heart">&lt;3</span> by <a href="https://github.com/wsandy1">Will S</a>.</p>
+    <p>&copy; &lt;Fedex Virtual&gt; 2022. Site made with <span class="heart">&lt;3</span> by <a href="https://github.com/wsandy1">Will S</a>.</p>
   </footer>
 </template>
 
@@ -31,10 +31,22 @@ header {
   position: relative;
   max-width: 60%;
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 20px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 1500px) {
+  .header-content {
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header-content {
+    max-width: 100%;
+  }
 }
 
 .logo {

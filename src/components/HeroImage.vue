@@ -51,7 +51,18 @@ const props = defineProps(['img', 'text', 'color'])
 .text {
     margin: 0;
     font-size: 72px;
+    text-align: center;
     color: var(--brand-white);
+}
+
+@media screen and (max-width: 700px) {
+  .text {
+    font-size: 50px;
+  }
+
+  .img {
+    background-position: 25%;
+  }
 }
 
 
@@ -67,13 +78,14 @@ const props = defineProps(['img', 'text', 'color'])
     overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
+    bottom: -1px;
 }
 
 .slant-1 svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 39px;
+    height: 1.5vh;
 }
 
 .slant-1 .shape-fill {
@@ -95,7 +107,7 @@ const props = defineProps(['img', 'text', 'color'])
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 67px;
+    height: 3vh;
 }
 
 .slant-2 .shape-fill {
@@ -117,7 +129,7 @@ const props = defineProps(['img', 'text', 'color'])
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 89px;
+    height: 5vh;
 }
 
 .slant-3 .shape-fill {
@@ -137,7 +149,7 @@ const props = defineProps(['img', 'text', 'color'])
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 35px;
+    height: 3.5vh;
 }
 
 .slant-top .shape-fill {

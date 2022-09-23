@@ -27,7 +27,6 @@ import Number from '../../node_modules/vue-number-animation/Number.vue';
     .wrapper {
         display: flex;
         align-items: center;
-        width: 25%;
 
     }
     .header {
@@ -46,9 +45,27 @@ import Number from '../../node_modules/vue-number-animation/Number.vue';
     h2 {
         margin: 0;
         color: var(--brand-orange);
-        font-size: 96px;
+        font-size: 5rem;
         line-height: 1;
     }
+
+    @media screen and (max-width: 1100px) {
+        h2 {
+            font-size: 48px;
+        }
+    }
+
+
+    @media screen and (max-width: 750px) {
+        h2 {
+            font-size: 5em;
+        }
+
+        .wrapper {
+            margin-bottom: 50px;
+        }
+    }
+
 
     img {
         width: 80px;
