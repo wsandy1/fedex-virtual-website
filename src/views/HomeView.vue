@@ -37,12 +37,12 @@ onMounted(() => {
   </Transition>
 
 
-  <HeroImage img="/src/assets/images/homehero.jpg" text="The World on Virtual Time"></HeroImage>
+  <HeroImage img="/homehero.jpg" text="The World on Virtual Time"></HeroImage>
   <main>
     <div class="stats-row">
-      <Stat :value="stats_data.routes" header="Routes" icon="/src/assets/icons/route.svg"/>
-      <Stat :value="stats_data.aircraft" header="Aircraft" icon="/src/assets/icons/airplane.svg"/>
-      <Stat :value="stats_data.pilots" header="Pilots" icon="/src/assets/icons/person.svg"/>
+      <Stat :value="stats_data.routes" header="Routes" icon="/icons/route.svg"/>
+      <Stat :value="stats_data.aircraft" header="Aircraft" icon="/icons/airplane.svg"/>
+      <Stat :value="stats_data.pilots" header="Pilots" icon="/icons/person.svg"/>
     </div>
     <h1>Welcome to the world's biggest (virtual) cargo airline.</h1>
     <div class="content-halves">

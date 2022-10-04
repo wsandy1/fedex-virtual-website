@@ -4,7 +4,7 @@ import HeroImage from '../components/HeroImage.vue';
 </script>
 
 <template>
-    <HeroImage img="/src/assets/images/fleethero.png" text="Fleet"/>
+    <HeroImage img="/fleethero.png" text="Fleet"/>
     <main>
         <h1>Fly your own way with our diverse fleet</h1>
         <div class="aircraft">
